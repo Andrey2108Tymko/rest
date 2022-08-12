@@ -1,7 +1,7 @@
-const sha1 = require("crypto-js/sha1");
+const hmacmd5 = require("crypto-js/hmac-md5");
 
 module.exports = (data) => {
-    data.res = sha1(data.in).toString(); 
+    data.res = hmacmd5(data.text, data.secret).toString(); 
     
     return data;
 };
