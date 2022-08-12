@@ -1,5 +1,5 @@
 module.exports = (data) => {
-    data.hello = "Hello World!";
+    data.hello = data.test";
 
     return data;
 };
